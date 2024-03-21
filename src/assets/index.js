@@ -8,7 +8,7 @@ import Card7 from './Card7.jpg';
 import Card8 from './Card8.jpg';
 import Card9 from './Card9.jpg';
 import Card10 from './Card10.jpg';
-import Card11 from './Card10.jpg';
+import Card11 from './Card11.jpg';
 
 
 export {

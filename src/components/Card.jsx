@@ -8,6 +8,7 @@ const Card = ({ image }) => {
           <img
             src={image}
             alt="Card"
+            loading="lazy"
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
