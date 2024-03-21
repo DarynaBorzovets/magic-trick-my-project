@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { cardList } from '../constants/index.js';
 import PropTypes from 'prop-types';
 
@@ -20,6 +21,14 @@ Card.propTypes = {
 };
 
 const Gallery = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/start');
+  };
+
+  
   return (
     <div className="bg-gradient-to-r from-indigo-500 to-emerald-500 min-h-screen overflow-hidden">
       <div className="container mx-auto">
@@ -29,9 +38,10 @@ const Gallery = () => {
           ))}
         </div>
         <div className="flex justify-center mt-6">
-          {/* Use Link component to navigate to the specified URL */}
+          
             <button className="bg-indigo-600 hover:bg-indigo-700 text-emerald-500 font-bold py-2 px-4 rounded"
              style={{ width: '150px' }}
+             onClick={handleClick}
             >
               Play
             </button>
